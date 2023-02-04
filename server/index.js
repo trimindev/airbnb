@@ -240,4 +240,7 @@ app.get("/bookings", async (req, res) => {
   res.json(await Booking.find({ user: userData.id }).populate("place"));
 });
 
-app.listen(4000, console.log("I am running!"));
+app.listen(
+  "https://airbnb-server-nu.vercel.app" || 4000,
+  console.log("I am running!")
+);

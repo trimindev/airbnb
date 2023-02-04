@@ -23,9 +23,11 @@ app.use("/uploads", express.static(__dirname));
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: "https://airbnb-trimindev.vercel.app",
   })
 );
+
+// app.use(cors());
 
 mongoose.set("strictQuery", true);
 
@@ -240,7 +242,4 @@ app.get("/bookings", async (req, res) => {
   res.json(await Booking.find({ user: userData.id }).populate("place"));
 });
 
-app.listen(
-  "https://airbnb-server-nu.vercel.app" || 4000,
-  console.log("I am running!")
-);
+app.listen(process.env.PORT || 4000, console.log("I am running!"));

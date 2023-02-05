@@ -14,15 +14,8 @@ import BookingsPage from "./pages/BookingsPage";
 import BookingPage from "./pages/BookingPage";
 
 axios.defaults.baseURL = "https://airbnb-48m2.onrender.com";
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 axios.defaults.withCredentials = true;
-=======
-// axios.defaults.withCredentials = true;
->>>>>>> b372aa2 (edit)
-=======
-axios.defaults.withCredentials = true;
->>>>>>> f26efa3 (edit)
 
 function App() {
   return (

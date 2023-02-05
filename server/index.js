@@ -28,6 +28,11 @@ app.use(
 );
 
 // app.use(cors());
+<<<<<<< HEAD
+
+// app.use(cors());
+=======
+>>>>>>> 735a684 (edit)
 
 mongoose.set("strictQuery", true);
 
